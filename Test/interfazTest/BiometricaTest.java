@@ -3,6 +3,8 @@ package interfazTest;
 import java.util.Scanner;
 import org.junit.jupiter.api.Test;
 import biometricaDominio.BiometricaClass;
+import biometricaDominio.TipoDeEmpleado;
+import machine.dominion.ProductType;
 
 class BiometricaTest {
 	
@@ -39,7 +41,15 @@ class BiometricaTest {
 	
 	@Test
 	private void testIngresarUsuario() {
-			
+		String nombreUsuario = teclado.next();
+		String apellidoUsuario = teclado.next();
+		System.out.println("Inserte tipo de empleado: ");
+		String tipo = teclado.next();
+		TipoDeEmpleado tipoDeEmpleado = TipoDeEmpleado.valueOf(tipo);
+		Double sueldo = teclado.nextDouble();
+		
+		BiometricaUsuarioClass usuario = new BiometricaUsuarioClass(nombreUsuario, apellidoUsuario, tipoDeEmpleado, sueldo);
+		
 	}
 	
 
@@ -53,8 +63,6 @@ class BiometricaTest {
 		
 	}
 
-
-	
 	@Test
 	private void testRegistrarIngresoDeUsuario(){
 		
