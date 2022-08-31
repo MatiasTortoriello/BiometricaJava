@@ -4,7 +4,7 @@ public class BiometricaClass {
 	
 	private String nombreMaquina;
 	private Integer numeroMaquina;
-	private RegistroClass[] registros;
+	private BiometricaUsuarioClass[] registros;
 	public BiometricaClass(String nombreMaquina, Integer cantidadRegistros ) {
 		
 	}
@@ -22,12 +22,14 @@ public class BiometricaClass {
 		this.numeroMaquina = numeroMaquina;
 	}
 
-	public RegistroClass[] getRegistros() {
+	public BiometricaUsuarioClass[] getRegistros() {
 		return registros;
 	}
 
-	public void setRegistros(RegistroClass[] registros) {
+	public void setRegistros(BiometricaUsuarioClass[] registros) {
 		this.registros = registros;
 	}
+
+
 	
 }

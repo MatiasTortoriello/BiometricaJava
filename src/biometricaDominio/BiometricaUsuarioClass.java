@@ -2,9 +2,16 @@ package biometricaDominio;
 
 public class BiometricaUsuarioClass {
 	
-	private final String contrasenia = "1234";
-	
 	private String nombre;
+	private String apellido;
+	private TipoDeEmpleado tipo;
+	private Double sueldo;
 	
+	public BiometricaUsuarioClass(String nombre, String apellido, TipoDeEmpleado tipo, Double sueldo) {
+		nombre = this.nombre;
+	 	apellido = this.apellido;
+	 	tipo = this.tipo;
+	 	sueldo = this.sueldo;
+	}
 	
 }
