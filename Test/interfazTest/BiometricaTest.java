@@ -3,8 +3,8 @@ package interfazTest;
 import java.util.Scanner;
 import org.junit.jupiter.api.Test;
 import biometricaDominio.BiometricaClass;
+import biometricaDominio.BiometricaUsuarioClass;
 import biometricaDominio.TipoDeEmpleado;
-import machine.dominion.ProductType;
 
 class BiometricaTest {
 	
